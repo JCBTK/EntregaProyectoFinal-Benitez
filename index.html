@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>90's</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    
-    
+    <nav class="navbar navbar-expand-md bg-body-tertiary p-3" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="./pages/img/logo.png" id="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                <a class="nav-link" href="./pages/musica.html">Musica</a>
+                <a class="nav-link" href="./pages/ropa.html">Ropa</a>
+                <a class="nav-link" href="./pages/autos.html">Autos</a>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/pages/img/01.png" class="d-block w-100" alt="Vida en los 90's">
+            </div>
+            <div class="carousel-item">
+                <img src="./pages/img/02.png" class="d-block w-100" alt="Ropa en los 90's">
+            </div>
+            <div class="carousel-item">
+                <img src="./pages/img/03.png" class="d-block w-100" alt="Hechos de los 90's">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
