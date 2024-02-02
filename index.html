@@ -7,8 +7,8 @@
     <title>90's</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary p-3" id="menu">
+<body id="Inicio">
+    <nav class="navbar navbar-expand-md bg-body-tertiary p-3 border-bottom" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html"><img src="./pages/img/logo.png" id="logo" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,31 +24,46 @@
                 </div>
             </div>
         </div>
-    </nav>
-
-    <div id="fotosNoventa" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/pages/img/01.png" class="d-block w-100" alt="Vida en los 90's">
+    </nav>    
+    <section class="w-75 mx-auto text-center" id="TextoBienvenida">
+        <div class="SoloTexto">
+            <h2 class="p-3 fs-1">Bienvenidos a los Noventas</h2>
+            <p class="fs-4" id="musica"> En los vibrantes años noventa, las vidas de los adolescentes apasionados por el rap eran una combinación perfecta de ritmo y estilo. La escena de la música urbana se convirtió para ellos en una vía para conectarse con la realidad de las calles, ya que quedaron cautivados por las ingeniosas letras de sus raperos favoritos. Estas letras no solo inspiraron a los jóvenes a escribir sus propias historias, sino que también los animaron a reflexionar sobre las complejidades de la vida en la ciudad.</p>
+            <br>
+            <p class="fs-4" id="ropa">La forma en que vestían estos jóvenes era una extensión de su personalidad colectiva y su profundo amor por el rap. Siempre estuvieron de moda, fácilmente distinguibles por su estilo urbano, caracterizado por camisetas holgadas, gorras ladeadas y zapatillas deportivas de edición limitada. Sus guardarropas estaban repletos de una variedad de colores y patrones que reflejaban su pasión por la cultura hip-hop y su deseo de destacar entre la multitud.</p>
+            <br>
+            <p class="fs-4" id="autos">Sin embargo, no se trataba sólo de música y moda en la vida de estos adolescentes. Su amor por los coches era un hilo conductor que los unía. Pasaban horas admirando autos deportivos, soñando con tener sus propios vehículos personalizados, y sus fines de semana a menudo estaban llenos de aventuras, desde perseguir exhibiciones de autos clásicos hasta participar en emocionantes carreras callejeras donde la potencia de los motores y la velocidad eran una fuente de gran emoción.</p>
+            <br>
+            <p class="fs-4" id="contacto">Ahora, gracias a nuestra innovadora aplicación web, podrás revisitar los apasionantes días de los noventa y la vida de los adolescentes que vivieron esa época. Únase a nuestra comunidad de entusiastas del rap, la moda y los automóviles para compartir experiencias, descubrir nueva música, mantener actualizado su estilo y conectarse con personas de ideas afines que estaban igualmente apasionadas por la cultura de esa época. ¡No esperes más para sumergirte en la cultura de los 90 con nuestra exclusiva aplicación web!</p>            
+        </div>    
+    </section>
+    <div class="container-fluid bg-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="./pages/img/logo.png" width="30" height="30" alt=""/>
+                </a>
+                <span class="mb-3 mb-md-0 text-light ">© 2024 90's, Inc</span>
             </div>
-            <div class="carousel-item">
-                <img src="./pages/img/02.png" class="d-block w-100" alt="Ropa en los 90's">
-            </div>
-            <div class="carousel-item">
-                <img src="./pages/img/03.png" class="d-block w-100" alt="Hechos de los 90's">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#fotosNoventa" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#fotosNoventa" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-link active text-light Inicio" aria-current="page" href="/index.html">Inicio</a>
+                            <a class="nav-link text-light Musica" href="./pages/musica.html">Musica</a>
+                            <a class="nav-link text-light Ropa" href="./pages/ropa.html">Ropa</a>
+                            <a class="nav-link text-light Autos" href="./pages/autos.html">Autos</a>
+                            <a class="nav-link text-light Contacto" href="./pages/contacto.html">Contacto</a>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+        </footer>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
