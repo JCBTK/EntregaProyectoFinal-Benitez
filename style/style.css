@@ -10,6 +10,7 @@ body{
     font-family:'Oswald', sans-serif;
     font-weight: bold;
     overflow-x: hidden;
+    margin: 0;
 }
 #logo{
     height: 4rem !important;
@@ -18,7 +19,36 @@ body{
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
 }
-
+.Inicio:hover{
+    scale: 1.15;
+    color: hotpink !important;
+    transition: 0.2s;
+}
+.Ropa:hover{
+    scale: 1.15;
+    color: rgb(89, 102, 205) !important;
+    transition: 0.2s;
+}
+.Musica:hover{
+    scale: 1.15;
+    color: rgb(255, 238, 0) !important;
+    transition: 0.2s;
+}
+.Autos:hover{
+    scale:1.15;
+    color: rgb(197, 25, 25) !important;
+    transition: 0.2s;
+}
+.Contacto:hover{
+    scale: 1.15;
+    color: rgb(196, 78, 246) !important ;
+    transition: 0.2s;
+}
+/*PAGINA DE INICIO*/
+.HOME{
+    background-image: url(../pages/img/BackgroundPaternHome.jpg);
+    padding: 1rem;
+}
 .carousel-inner{
     display: flex;
     align-items: center;
@@ -26,17 +56,17 @@ body{
     max-height: 35rem!important;
 }
 .SoloTexto h2{
-    color:rgb(255, 0, 204) !important;
+    color:rgb(255, 255, 255) !important;
     text-shadow: 0.1rem 0.1rem 0 black;
     font-family: 'Bebas Neue', sans-serif;
 }
 .SoloTexto{
-    margin: 2rem;
+    margin: 0rem 2rem;
     padding: 2rem;
     border: solid 1px grey;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0 black;
-    background-color: rgba(255, 0, 242, 0.256);
+    background-color: rgba(202, 35, 194, 0.78);
     transition: 0.3s;
 }
 .SoloTexto:hover{
@@ -53,7 +83,7 @@ body{
     background-color: rgba(219, 31, 31, 0.729);
 }
 #contacto{
-    background-color: rgba(137, 43, 226, 0.603);
+    background-color: rgba(145, 53, 231, 0.714);
 }
 #musica ,#ropa, #autos, #contacto{
     color: white;
@@ -69,14 +99,7 @@ body{
     box-shadow: 0.4rem 0.4rem 0rem black;
 }
 
-.Musica:hover{
-    scale: 1.2;
-    color: rgb(255, 238, 0) !important;
-}
-.Autos:hover{
-    scale:1.2;
-    color: rgb(197, 25, 25) !important;
-}
+
 
 @media (max-width:992px) {
     #TextoBienvenida {width: 90% !important;}
