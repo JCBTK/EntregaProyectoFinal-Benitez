@@ -120,7 +120,20 @@ body{
     padding: 1rem;
     background-image: url(../pages/img/BackgroundPaternCars.jpg);
 }
-
-#HAM{
-    color: white !important;
+/*PAGINA MUSICA*/
+.MUSICA{
+    padding: 1.5rem;
+    background-image: url(../pages/img/BackgroundPaternMusic.jpg);
+}
+.card{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2rem;
+    height:38rem ;
+}
+.card-img-top{
+    max-height: 60% !important;
+    border-radius: 0.5rem;
+}
+.card-text{
 }
