@@ -40,8 +40,10 @@ body{
 }
 .Inicio:hover ,.Ropa:hover, .Musica:hover, .Autos:hover,.Contacto:hover {
     scale: 1.15;
-    color: hotpink !important;
     transition: 0.2s;
+}
+.Inicio:hover{
+    color: hotpink !important;
 }
 .Ropa:hover{
     color: rgb(89, 102, 205) !important;
@@ -126,7 +128,8 @@ body{
     #TextoBienvenida {width: 90% !important;}
     #TextoAutos{width: 90% !important;}
     .marca img {
-        visibility: hidden;
+        height: 40px;
+        width: 40px;
         content-visibility:hidden;
     }
 }
@@ -287,7 +290,7 @@ color: #a8a8a8;
     background-image: url(../pages/img/BackgroundPaternClothe.jpg);
     padding: 2rem;
 }
-.ROPA article{
+.marca{
     padding: 2rem 0rem;
     display: flex;
     background: #d8d8d89d;
@@ -297,12 +300,4 @@ color: #a8a8a8;
     margin: 2rem 2rem;
     align-items: center;
     box-shadow: -0.5rem 0.5rem 0 #3c3c3c80;
-}
-.ropa{
-    padding: 1rem;
-    font-family: 'Anton', sans-serif;
-    font-weight: 300;
-}
-.marca{
-    padding: 2rem !important;
 }
