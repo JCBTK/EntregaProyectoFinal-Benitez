@@ -152,6 +152,7 @@ body{
     padding: 1rem;
     background-image: url(../pages/img/BackgroundPaternCars.jpg);
 }
+
 /*PAGINA MUSICA*/
 .MUSICA{
     padding: 1.5rem;
@@ -290,6 +291,7 @@ color: #a8a8a8;
     outline:0;
     border: 1px solid #ffd900;
 }
+
 /*PAGINA DE ROPA*/
 .ROPA article img{
     width: 60px;
@@ -310,9 +312,16 @@ color: #a8a8a8;
     border-radius: 10px;
     margin: 2rem 2rem;
     align-items: center;
-    box-shadow: -0.5rem 0.5rem 0 #3c3c3c80;
+    box-shadow: 0.5rem 0.5rem 0 black;
     font-weight:800 !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 
+    backdrop-filter 0.1s,
+    box-shadow 0.2s;
+}
+.marca:hover{
+    box-shadow: 0.8rem 0.8rem 0 black;   
+    backdrop-filter: blur(6px); 
 }
 .titulos{
     display: flex;
