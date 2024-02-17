@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script&family=Oswald:wght@200&display=swap');
-
-/*No olvidarme las reglas del font 
-font-family: 'Anton', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+;
+/*
+font-family: "Koulen", sans-serif;
+font-family: "Roboto", sans-serif;
 */
 
+$RopaColor:#008cff;
+$MusicaColor:#e4b713;
+$InicioColor:#ff69b4;
+$ContactoColor:#7a189b;
+$AutosColor:#cd1919;
+$FondoCards: white;
+$Textos:black;
+$sombra: 0.5rem 0.5rem 0rem black;
+$SombraH: 1rem 1rem 0rem black;
 
+/*medias*/
 @media (max-width:992px) {
     #TextoBienvenida {width: 90% !important;}
     #TextoAutos{width: 90% !important;}
@@ -16,171 +24,296 @@ font-family: 'Oswald', sans-serif;
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-start !important;
-    }
-    .marca img {
-        height: 40px !important;
-        width: 40px !important;
-        background-color: transparent !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-        align-items: baseline !important;
+        img {
+            height: 40px !important;
+            width: 40px !important;
+            background-color: transparent !important;
+            align-items: baseline !important;
+        }
     }
     .titulos{
         display: flex;
         flex-direction: row !important;
     }
 }
+
 body{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
     word-spacing: 0.5rem;
-    font-family:'Oswald', sans-serif;
     font-weight: bold;
     overflow-x: hidden;
     margin: 0;
+
+    h2{
+        font-family: "Koulen", sans-serif;
+    }
+    p{  
+        font-size: 1.2rem;
+        font-family: "Roboto", sans-serif;
+    }
 }
+
+/*navbar*/
 #logo{
     filter: drop-shadow(-0.2rem 0.2rem 0 black);
     height: 4rem !important;
-    transition: 0.3s;
+    transition: 0.2s;
     &:hover{
         filter: drop-shadow(-0.4rem 0.4rem 0 black);
     }
 }
+
 .navbar-toggler-icon{
     filter: invert(black);
 }
 .navbar-toggler{
     background-color: #8430ab !important;
     border: solid 2px #a73bda;
-    transition: 0.3s;
+    transition: 0.2s;
     &:hover{
         background-color: #9158ab !important;
-        box-shadow: 0.2rem 0.2rem 0rem rgb(0, 0, 0);
+        box-shadow: $sombra;
     }
 }
-
-#menu a {
+#menu a,.navbar-nav a {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+    font-family: "Koulen", sans-serif;
 }
 .Inicio:hover ,.Ropa:hover, .Musica:hover, .Autos:hover,.Contacto:hover {
     scale: 1.15;
     transition: 0.2s;
 }
 .Inicio:hover{
-    color: hotpink !important;
+    color: $InicioColor !important;
 }
 .Ropa:hover{
-    color: rgb(89, 102, 205) !important;
+    color: $RopaColor !important;
 }
 .Musica:hover{
-    color: rgb(255, 238, 0) !important;
+    color: $MusicaColor !important;
 }
 .Autos:hover{
-    color: rgb(197, 25, 25) !important;
+    color: $AutosColor !important;
 }
 .Contacto:hover{
     color: rgb(196, 78, 246) !important ;
 }
+
 /*PAGINA DE INICIO*/
 .HOME{
-    background-image: url(../pages/img/BackgroundPaternHome.jpg);
+    background-color: $InicioColor;
     padding: 1rem;
-}
-.carousel-inner{
-    display: flex;
-    align-items: center;
-    overflow-y: hidden;
-    max-height: 35rem!important;
-}
-.SoloTexto{
-    background-color: rgba(202, 35, 194, 0.78);
-    h2{
-        color:rgb(255, 255, 255) !important;
-        text-shadow: 0.1rem 0.1rem 0 black;
-        font-family: 'Bebas Neue', sans-serif;
+    .SoloTexto{
+        background-color: $FondoCards;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: $sombra;
+        border-radius: 1rem;
+        &:hover{
+            transition: box-shadow .2s;
+            box-shadow: $SombraH;
+        }
+        .container{
+            margin:0;
+            .inicio{
+                height: 20rem;
+                .enlace{
+                    text-decoration: none;
+                    p{
+                        display: flex !important;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        h2{
+            padding-top: 2rem ;
+            color:$InicioColor !important;
+            text-shadow: 0.2rem 0.2rem 0 black;
+            font-family: "Koulen", sans-serif;
+            font-size: 3rem !important;
+            &:hover{
+                transition: text-shadow 0.2s;
+                text-shadow: 0.1rem 0.1rem 0 black;
+            }
+        }
     }
 }
-.TextoAutos{
-    background-color: rgba(252, 31, 31, 0.646);
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 1px 1px 0rem black;
-    border: solid 2px rgb(255, 255, 255) ;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0rem black;
-    padding: 2rem;
-    transition: 0.2s;
-}
-.SoloTexto , .TextoAutos {
-    margin: 0rem 2rem;
-    padding: 2rem;
-    border: solid 1px grey;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 0 black;
-    transition: 0.3s;
-    &:hover{
-        box-shadow: 0.7rem 0.7rem 0 black;}
-}  
+
+
+
 #musica{
-    background-color: rgba(213, 224, 0, 0.567);
+    background-color: $MusicaColor;
 }
 #ropa{
-    background-color: rgba(0, 140, 255, 0.648);
+    background-color: $RopaColor;
 }
 #autos{
-    background-color: rgba(219, 31, 31, 0.729);
+    background-color: $AutosColor;
 }
 #contacto{
-    background-color: rgba(145, 53, 231, 0.714);
+    background-color: $ContactoColor;
 }
 #musica ,#ropa, #autos, #contacto {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 1px 1px 0rem black;
-    border: solid 2px rgb(255, 255, 255) ;
+    color: $FondoCards;
+    text-shadow: 1px 1px $Textos;
+    border: solid 2px $FondoCards ;
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0rem black;
+    box-shadow: $sombra;
     padding: 2rem;
     transition: 0.2s;
+    height: 15rem;
+    margin: 2rem;
     &:hover{
-        box-shadow: 0.4rem 0.4rem 0rem black;
+        box-shadow: $SombraH;
     }
 }
 /*PAGINA AUTOS*/
 .AUTOS{
+    background-color: $AutosColor;
     padding: 1rem;
-    background-image: url(../pages/img/BackgroundPaternCars.jpg);
-}
+    #TextoAutos{
+        h1{
+            color: $AutosColor;
+            text-shadow: 0.1rem 0.1rem 0 black;
+        }
+        .TextoAutos{
+                margin-bottom:2rem ;
+                overflow: hidden;
+                background-color: $FondoCards;
+                color: $Textos;
+                border: solid 2px $FondoCards ;
+                border-radius: 1rem;
+                box-shadow: $sombra;
+                padding: 2rem;
+                transition: 0.2s;
+                box-shadow: $sombra;
+                &:hover{
+                    box-shadow: $SombraH;
+                }
+            }
+            h1{
+                padding-top: 2rem ;
+                color:$AutosColor !important;
+                text-shadow: 0.2rem 0.2rem 0 black;
+                font-family: "Koulen", sans-serif;
+                font-size: 3rem !important;
+                &:hover{
+                    transition: text-shadow 0.2s;
+                    text-shadow: 0.1rem 0.1rem 0 black;
+                }
+            }
+            .imagenauto{
+                width: 70%;
+                border: 2px solid $FondoCards;
+                border-radius: 1rem;
+                margin-bottom: 3rem;
+                box-shadow: $sombra;
+                transition: box-shadow .2s;
+                &:hover{
+                    box-shadow: $SombraH;
+                }
+            }
+        }
+    }
 
 /*PAGINA MUSICA*/
 .MUSICA{
-    padding: 1.5rem;
-    background-image: url(../pages/img/BackgroundPaternMusic.jpg);
-}
-.card{
-    background-color: #ffd900a1;
-    backdrop-filter: blur(5px);
-    padding: 2rem;
-    height:38rem ;
-    overflow-wrap: break-word;
-    box-shadow: 0.3rem 0.3rem 0 black;
-    font-family: 'Anton', sans-serif;
-    font-weight: 300;
-    .card-text{filter: blur(3px);}
-    .btn{visibility:hidden;}
-    transition: 0.2s !important;
-    &:hover{
-        box-shadow: 0.5rem 0.5rem 0 black;
-        .btn{visibility: visible;}
-        .card-text{filter:blur(0px);
-        transition: 0.2s;}
+    background-color: $MusicaColor;
+    display: flex;
+    justify-content: center;
+    .musica{
+        display: flex;
+        justify-content:space-around;
+        margin: 2rem;
+        padding: 0;
+        .msc1{
+            background-image: url(../pages/img/Musica1.jpg);
+        }
+        .msc2{
+            background-image: url(../pages/img/Musica2.jpg);
+        }
+        .msc3{
+            background-image: url(../pages/img/Musica3.jpg);
+        }
+        .musicos{
+            display: flex;
+            flex-direction: row;
+            margin: 2rem;
+            justify-content: space-around;
+            .col-sm-12{
+                margin-bottom: 2rem;
+            }
+            .musico{
+                background-size: cover, 100%;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end !important;
+                overflow: hidden;
+                box-sizing: border-box;
+                border-radius: 1rem;
+                height: 60vh;
+                box-shadow: $sombra ;
+                border: solid 2px black;
+                transition:box-shadow 0.2s;
+                text-align: center;
+                text-shadow: 0.1rem 0.1rem 0 black;
+                color: white;
+                h2{font-weight: 800;}
+                a{  
+                    visibility: hidden;
+                    font-size: 1rem;
+                    transition:transform .4s;
+                    border: 1px solid grey ;
+                    border-radius: 1rem;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    font-family:sans-serif;
+                    transition: box-shadow 0.2s;
+                    &:hover{
+                        box-shadow: $sombra !important;   
+                    }
+                }
+                &:hover{
+                    border: 2px solid rgb(0, 0, 0);
+                    box-sizing: border-box;
+                    box-shadow: $SombraH;
+                    text-shadow: none;
+                    h2{ scale: 0.1 0;
+                        transition: color 1s, scale .4s;
+                        color: transparent;
+                    }
+                    p{  
+                        scale: 0.1 0;
+                        transition: color 1s, scale .4s;
+                        color: transparent;
+                    }
+                    a{margin-bottom: 2rem;
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 1rem;
+                        z-index: 2;
+                        visibility: visible;
+                        text-shadow: none;
+                        font-weight: 600;
+                        background-color: #ffffff;
+                        box-shadow: 0.2rem 0.2rem 0rem black;
+                        border-radius:1rem;
+                        border: 2px solid black;
+                    }
+                };
+            }
+        }
     }
 }
-.card-img-top{
-    max-height: 60% !important;
-    border-radius: 0.5rem;
-}
+
+
 
 /*PAGINA CONTACTO*/
 form {
@@ -272,41 +405,38 @@ form {
         font-size: 14px; 
         color: #ffffff; 
     }
+    .aviso{
+        font-size: 13px;  
+        color: #ffffff;  
+    }
 } 
-.contact_form .aviso{
-    font-size: 13px;  
-    color: #ffffff;  
-}
+.contact_form 
 ::-webkit-input-placeholder {
 color: #a8a8a8;
 }
 ::-webkit-textarea-placeholder {
 color: #a8a8a8;
 }
-.formulario textarea
 
 /*PAGINA DE ROPA*/
-
-.ROPA {
-    display: flex;
-    background-image: url(../pages/img/BackgroundPaternClothe.jpg);
+.paginaRopa{
+    background-color: $RopaColor;
+    margin: 0;
     padding: 2rem;
 }
 .marca{
+    margin: 2rem 0rem 2rem 0rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    background: #d8d8d89d;
-    backdrop-filter: blur(2px);
+    background: $FondoCards;
     border: 2px solid #ffffff80;
     border-radius: 10px;
-    margin: 2rem 2rem;
     align-items: center;
-    box-shadow: 0.5rem 0.5rem 0 black;
+    box-shadow: $sombra;
     font-weight:800 !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 
-    backdrop-filter 0.1s,
     box-shadow 0.2s;
     .titulos{
         display: flex;
@@ -319,7 +449,6 @@ color: #a8a8a8;
         }
     }
     &:hover{
-        box-shadow: 0.8rem 0.8rem 0 black;   
-        backdrop-filter: blur(6px); 
+        box-shadow:$SombraH;   
     }
 }
