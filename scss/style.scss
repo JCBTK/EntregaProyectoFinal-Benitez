@@ -36,6 +36,11 @@ $SombraH: 1rem 1rem 0rem black;
         flex-direction: row !important;
     }
 }
+@media (max-width:576px){
+    .enlace p{
+        font-size: small;
+    }
+}
 
 body{
     font-family: "Roboto", sans-serif;

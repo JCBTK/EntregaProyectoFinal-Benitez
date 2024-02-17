@@ -28,6 +28,11 @@ font-family: "Roboto", sans-serif;
     flex-direction: row !important;
   }
 }
+@media (max-width: 576px) {
+  .enlace p {
+    font-size: small;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
