@@ -36,9 +36,9 @@ $SombraH: 1rem 1rem 0rem black;
         flex-direction: row !important;
     }
 }
-@media (max-width:576px){
+@media (max-width:768px){
     .enlace p{
-        font-size: small;
+        font-size: 0.5rem !important;
     }
 }
 
