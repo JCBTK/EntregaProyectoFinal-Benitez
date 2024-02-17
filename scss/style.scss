@@ -125,7 +125,7 @@ body{
         .container{
             margin:0;
             .inicio{
-                height: 20rem;
+                height: 40%;
                 .enlace{
                     text-decoration: none;
                     p{
@@ -172,7 +172,6 @@ body{
     padding: 2rem;
     transition: 0.2s;
     height: 15rem;
-    margin: 2rem;
     &:hover{
         box-shadow: $SombraH;
     }

@@ -126,7 +126,7 @@ body p {
   margin: 0;
 }
 .HOME .SoloTexto .container .inicio {
-  height: 20rem;
+  height: 40%;
 }
 .HOME .SoloTexto .container .inicio .enlace {
   text-decoration: none;
@@ -172,7 +172,6 @@ body p {
   padding: 2rem;
   transition: 0.2s;
   height: 15rem;
-  margin: 2rem;
 }
 #musica:hover, #ropa:hover, #autos:hover, #contacto:hover {
   box-shadow: 1rem 1rem 0rem black;
