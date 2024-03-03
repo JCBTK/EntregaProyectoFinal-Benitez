@@ -1,40 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
-;
-/*
-font-family: "Koulen", sans-serif;
-font-family: "Roboto", sans-serif;
-*/
-$RopaColor:#008cff;
-$MusicaColor:#e4b713;
-$InicioColor:#ff69b4;
-$ContactoColor:#7a189b;
-$AutosColor:#cd1919;
-$FondoCards: white;
-$Textos:black;
-$sombra: 0.5rem 0.5rem 0rem black;
-$SombraH: 1rem 1rem 0rem black;
-/*medias*/
-@media (max-width:992px) {
-    #TextoBienvenida {width: 90% !important;}
-    #TextoAutos{width: 90% !important;}
-    .marca{
-        padding: 2rem !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        img {
-            height: 40px;
-            width: 40px ;
-            background-color: transparent !important;
-            align-items: baseline !important;}}
-    .tituloDeMarca{
-        display: flex;
-        flex-direction: row !important;}}
-@media (max-width:768px){
-    .enlace p{
-        font-size: small !important;}
-    .imagenAuto{
-        width: 90% !important;}}
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -47,60 +11,9 @@ body{
     p{  
         font-size: 1.2rem;
         font-family: "Roboto", sans-serif;}}
-/*navbar*/
-#logo{
-    filter: drop-shadow(-0.2rem 0.2rem 0 black);
-    height: 4rem !important;
-    transition: 0.2s;
-    &:hover{
-        filter: drop-shadow(-0.4rem 0.4rem 0 black);}}
-.navbar-toggler-icon{
-    filter: invert(black);}
-.navbar-toggler{
-    background-color: #8430ab !important;
-    border: solid 2px #a73bda;
-    transition: 0.2s;
-    &:hover{
-        background-color: #9158ab !important;
-        box-shadow: $sombra;}}
-#menu a,.navbar-nav a {
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    font-family: "Koulen", sans-serif;}
-.Inicio:hover ,.Ropa:hover, .Musica:hover, .Autos:hover,.Contacto:hover {
-    scale: 1.15;
-    transition: 0.2s;}
-.Inicio:hover{
-    color: $InicioColor !important;}
-.Ropa:hover{
-    color: $RopaColor !important;}
-.Musica:hover{
-    color: $MusicaColor !important;}
-.Autos:hover{
-    color: $AutosColor !important;}
-.Contacto:hover{
-    color: rgb(196, 78, 246) !important ;}
-/*PAGINA DE INICIO*/
-
-#musica{
-    background-color: $MusicaColor;}
-#ropa{
-    background-color: $RopaColor;}
-#autos{
-    background-color: $AutosColor;}
-#contacto{
-    background-color: $ContactoColor;}
-#musica ,#ropa, #autos, #contacto {
-    color: $FondoCards;
-    text-shadow: 1px 1px $Textos;
-    border: solid 2px $FondoCards ;
-    border-radius: 1rem;
-    box-shadow: $sombra;
-    padding: 2rem;
-    transition: 0.2s;
-    height: 15rem;
-    &:hover{
-        box-shadow: $SombraH;}}
+/*COMPONENTES*/
+@import 'components/navbar';
+@import 'components/media';
 /*PAGINAS*/
 @import 'layouts/autos' ;
 @import 'layouts/musica';

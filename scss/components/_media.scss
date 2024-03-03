@@ -1,0 +1,21 @@
+@media (max-width:992px) {
+    #TextoBienvenida {width: 90% !important;}
+    #TextoAutos{width: 90% !important;}
+    .marca{
+        padding: 2rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        img {
+            height: 40px;
+            width: 40px ;
+            background-color: transparent !important;
+            align-items: baseline !important;}}
+    .tituloDeMarca{
+        display: flex;
+        flex-direction: row !important;}}
+@media (max-width:768px){
+    .enlace p{
+        font-size: small !important;}
+    .imagenAuto{
+        width: 90% !important;}}

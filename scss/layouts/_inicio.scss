@@ -1,3 +1,12 @@
+$RopaColor:#008cff;
+$MusicaColor:#e4b713;
+$InicioColor:#ff69b4;
+$ContactoColor:#7a189b;
+$AutosColor:#cd1919;
+$FondoCards: white;
+$Textos:black;
+$sombra: 0.5rem 0.5rem 0rem black;
+$SombraH: 1rem 1rem 0rem black;
 .paginaPrincipal{
     background-color: $InicioColor;
     padding: 1rem;
@@ -16,6 +25,25 @@
             margin:0;
             .inicio{
                 height: 40%;
+                #musica{
+                    background-color: $MusicaColor;}
+                #ropa{
+                    background-color: $RopaColor;}
+                #autos{
+                    background-color: $AutosColor;}
+                #contacto{
+                    background-color: $ContactoColor;}
+                #musica ,#ropa, #autos, #contacto {
+                    color: $FondoCards;
+                    text-shadow: 1px 1px $Textos;
+                    border: solid 2px $FondoCards ;
+                    border-radius: 1rem;
+                    box-shadow: $sombra;
+                    padding: 2rem;
+                    transition: 0.2s;
+                    height: 15rem;
+                    &:hover{
+                        box-shadow: $SombraH;}}
                 .enlace{
                     text-decoration: none;
                     p{

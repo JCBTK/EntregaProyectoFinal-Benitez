@@ -1,3 +1,9 @@
+$contactoBloque:#ea00ff;
+$ContactoColor:#7a189b;
+$FondoCards: white;
+$Textos:black;
+$sombra: 0.5rem 0.5rem 0rem black;
+$SombraH: 1rem 1rem 0rem black;
 form {
     display: flex;
     flex-direction: column;
@@ -8,37 +14,37 @@ form {
     height: auto;
     margin:0;  
     padding: 1rem 2rem;
-    background-color: #8430ab;
+    background-color: $ContactoColor;
     width: 100%;
     .formlario{
         width: 18rem;}
     input{
-        background-color: #fbfbfb; 
+        background-color: $FondoCards; 
         width: 100%; 
         height: 40px; 
         border-radius: 5px;  
         border-style: solid; 
         border-width: 1px; 
-        border-color: #b13a1a; 
+        border-color: $contactoBloque; 
         margin-top: 10px;  
         margin-bottom: 20px;
         &:focus{
             outline:0;
-            border: 1px solid #ea00ff;}}
+            border: 1px solid $contactoBloque;}}
     textarea{
-        background-color: #fbfbfb; 
+        background-color: $FondoCards; 
         width: 100%; 
         height: 150px; 
         border-radius: 5px;  
         border-style: solid; 
         border-width: 1px; 
-        border-color: #b13a1a; 
+        border-color: $contactoBloque; 
         margin-top: 10px;  
         margin-bottom: 20px; 
         padding-top: 15px;
         &:focus{
             outline:0;
-            border: 1px solid #ffd900;}}
+            border: 1px solid $contactoBloque;}}
     label{
         display: block; 
         float: center;}
@@ -49,34 +55,34 @@ form {
         margin-bottom: 20px; 
         margin-top: 10px;   
         text-transform: uppercase;
-        background-color: #ffffff; 
-        border-color: #ffffff; 
+        background-color: $FondoCards; 
+        border-color: $FondoCards; 
         border-style: solid; 
         border-radius: 10px;  
         width: 100%;   
         cursor: pointer;
-        p{color: #000000;}}
+        p{color: $Textos;}}
     span{
-        color: #ffffff;}
+        color: $FondoCards;}
     h1{ 
         text-align: center; 
         padding-bottom: 1.2rem; 
-        color: #ffffff;
+        color: $FondoCards;
         font-weight: 400;
         font-family: 'Dela Gothic One', sans-serif;
-        text-shadow: 0.3rem 0.3rem 0px #00000080;
+        text-shadow: 0.3rem 0.3rem 0px $Textos;
         font-size: 2rem;}
     h3{
         font-size: 16px; 
         padding-bottom: 30px;
-        color: #ffffff;}
+        color: $FondoCards;}
     p{
         width: 100%;
         font-size: 14px; 
-        color: #ffffff;}
+        color: $FondoCards;}
     .aviso{
         font-size: 13px;  
-        color: #ffffff;}
+        color: $FondoCards;}
     .formulario form{width: 100%;}
     &::-webkit-input-placeholder {color: #a8a8a8;}
     &::-webkit-textarea-placeholder {color: #a8a8a8;}
