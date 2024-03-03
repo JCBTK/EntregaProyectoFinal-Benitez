@@ -4,7 +4,6 @@
 font-family: "Koulen", sans-serif;
 font-family: "Roboto", sans-serif;
 */
-
 $RopaColor:#008cff;
 $MusicaColor:#e4b713;
 $InicioColor:#ff69b4;
@@ -14,7 +13,6 @@ $FondoCards: white;
 $Textos:black;
 $sombra: 0.5rem 0.5rem 0rem black;
 $SombraH: 1rem 1rem 0rem black;
-
 /*medias*/
 @media (max-width:992px) {
     #TextoBienvenida {width: 90% !important;}
@@ -25,23 +23,18 @@ $SombraH: 1rem 1rem 0rem black;
         flex-direction: column !important;
         align-items: flex-start !important;
         img {
-            height: 40px !important;
-            width: 40px !important;
+            height: 40px;
+            width: 40px ;
             background-color: transparent !important;
-            align-items: baseline !important;
-        }
-    }
-    .titulos{
+            align-items: baseline !important;}}
+    .tituloDeMarca{
         display: flex;
-        flex-direction: row !important;
-    }
-}
+        flex-direction: row !important;}}
 @media (max-width:768px){
     .enlace p{
-        font-size: small !important;
-    }
-}
-
+        font-size: small !important;}
+    .imagenAuto{
+        width: 90% !important;}}
 body{
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -49,120 +42,54 @@ body{
     font-weight: bold;
     overflow-x: hidden;
     margin: 0;
-
     h2{
-        font-family: "Koulen", sans-serif;
-    }
+        font-family: "Koulen", sans-serif;}
     p{  
         font-size: 1.2rem;
-        font-family: "Roboto", sans-serif;
-    }
-}
-
+        font-family: "Roboto", sans-serif;}}
 /*navbar*/
 #logo{
     filter: drop-shadow(-0.2rem 0.2rem 0 black);
     height: 4rem !important;
     transition: 0.2s;
     &:hover{
-        filter: drop-shadow(-0.4rem 0.4rem 0 black);
-    }
-}
-
+        filter: drop-shadow(-0.4rem 0.4rem 0 black);}}
 .navbar-toggler-icon{
-    filter: invert(black);
-}
+    filter: invert(black);}
 .navbar-toggler{
     background-color: #8430ab !important;
     border: solid 2px #a73bda;
     transition: 0.2s;
     &:hover{
         background-color: #9158ab !important;
-        box-shadow: $sombra;
-    }
-}
+        box-shadow: $sombra;}}
 #menu a,.navbar-nav a {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-    font-family: "Koulen", sans-serif;
-}
+    font-family: "Koulen", sans-serif;}
 .Inicio:hover ,.Ropa:hover, .Musica:hover, .Autos:hover,.Contacto:hover {
     scale: 1.15;
-    transition: 0.2s;
-}
+    transition: 0.2s;}
 .Inicio:hover{
-    color: $InicioColor !important;
-}
+    color: $InicioColor !important;}
 .Ropa:hover{
-    color: $RopaColor !important;
-}
+    color: $RopaColor !important;}
 .Musica:hover{
-    color: $MusicaColor !important;
-}
+    color: $MusicaColor !important;}
 .Autos:hover{
-    color: $AutosColor !important;
-}
+    color: $AutosColor !important;}
 .Contacto:hover{
-    color: rgb(196, 78, 246) !important ;
-}
-
+    color: rgb(196, 78, 246) !important ;}
 /*PAGINA DE INICIO*/
-.HOME{
-    background-color: $InicioColor;
-    padding: 1rem;
-    .SoloTexto{
-        background-color: $FondoCards;
-        margin: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: $sombra;
-        border-radius: 1rem;
-        &:hover{
-            transition: box-shadow .2s;
-            box-shadow: $SombraH;
-        }
-        .container{
-            margin:0;
-            .inicio{
-                height: 40%;
-                .enlace{
-                    text-decoration: none;
-                    p{
-                        display: flex !important;
-                        align-items: center;
-                    }
-                }
-            }
-        }
-        h2{
-            padding-top: 2rem ;
-            color:$InicioColor !important;
-            text-shadow: 0.2rem 0.2rem 0 black;
-            font-family: "Koulen", sans-serif;
-            font-size: 3rem !important;
-            &:hover{
-                transition: text-shadow 0.2s;
-                text-shadow: 0.1rem 0.1rem 0 black;
-            }
-        }
-    }
-}
-
-
 
 #musica{
-    background-color: $MusicaColor;
-}
+    background-color: $MusicaColor;}
 #ropa{
-    background-color: $RopaColor;
-}
+    background-color: $RopaColor;}
 #autos{
-    background-color: $AutosColor;
-}
+    background-color: $AutosColor;}
 #contacto{
-    background-color: $ContactoColor;
-}
+    background-color: $ContactoColor;}
 #musica ,#ropa, #autos, #contacto {
     color: $FondoCards;
     text-shadow: 1px 1px $Textos;
@@ -173,290 +100,10 @@ body{
     transition: 0.2s;
     height: 15rem;
     &:hover{
-        box-shadow: $SombraH;
-    }
-}
-/*PAGINA AUTOS*/
-.AUTOS{
-    background-color: $AutosColor;
-    padding: 1rem;
-    #TextoAutos{
-        h1{
-            color: $AutosColor;
-            text-shadow: 0.1rem 0.1rem 0 black;
-        }
-        .TextoAutos{
-                margin-bottom:2rem ;
-                overflow: hidden;
-                background-color: $FondoCards;
-                color: $Textos;
-                border: solid 2px $FondoCards ;
-                border-radius: 1rem;
-                box-shadow: $sombra;
-                padding: 2rem;
-                transition: 0.2s;
-                box-shadow: $sombra;
-                &:hover{
-                    box-shadow: $SombraH;
-                }
-            }
-            h1{
-                padding-top: 2rem ;
-                color:$AutosColor !important;
-                text-shadow: 0.2rem 0.2rem 0 black;
-                font-family: "Koulen", sans-serif;
-                font-size: 3rem !important;
-                &:hover{
-                    transition: text-shadow 0.2s;
-                    text-shadow: 0.1rem 0.1rem 0 black;
-                }
-            }
-            .imagenauto{
-                width: 70%;
-                border: 2px solid $FondoCards;
-                border-radius: 1rem;
-                margin-bottom: 3rem;
-                box-shadow: $sombra;
-                transition: box-shadow .2s;
-                &:hover{
-                    box-shadow: $SombraH;
-                }
-            }
-        }
-    }
-
-/*PAGINA MUSICA*/
-.MUSICA{
-    background-color: $MusicaColor;
-    display: flex;
-    justify-content: center;
-    .musica{
-        display: flex;
-        justify-content:space-around;
-        margin: 2rem;
-        padding: 0;
-        .msc1{
-            background-image: url(../pages/img/Musica1.jpg);
-        }
-        .msc2{
-            background-image: url(../pages/img/Musica2.jpg);
-        }
-        .msc3{
-            background-image: url(../pages/img/Musica3.jpg);
-        }
-        .musicos{
-            display: flex;
-            flex-direction: row;
-            margin: 2rem;
-            justify-content: space-around;
-            .col-sm-12{
-                margin-bottom: 2rem;
-            }
-            .musico{
-                background-size: cover, 100%;
-                background-position: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-end !important;
-                overflow: hidden;
-                box-sizing: border-box;
-                border-radius: 1rem;
-                height: 60vh;
-                box-shadow: $sombra ;
-                border: solid 2px black;
-                transition:box-shadow 0.2s;
-                text-align: center;
-                text-shadow: 0.1rem 0.1rem 0 black;
-                color: white;
-                h2{font-weight: 800;}
-                a{  
-                    visibility: hidden;
-                    font-size: 1rem;
-                    transition:transform .4s;
-                    border: 1px solid grey ;
-                    border-radius: 1rem;
-                    font-size: 2rem;
-                    font-weight: 400;
-                    font-family:sans-serif;
-                    transition: box-shadow 0.2s;
-                    &:hover{
-                        box-shadow: $sombra !important;   
-                    }
-                }
-                &:hover{
-                    border: 2px solid rgb(0, 0, 0);
-                    box-sizing: border-box;
-                    box-shadow: $SombraH;
-                    text-shadow: none;
-                    h2{ scale: 0.1 0;
-                        transition: color 1s, scale .4s;
-                        color: transparent;
-                    }
-                    p{  
-                        scale: 0.1 0;
-                        transition: color 1s, scale .4s;
-                        color: transparent;
-                    }
-                    a{margin-bottom: 2rem;
-                        text-decoration: none;
-                        color: rgb(0, 0, 0);
-                        font-size: 1rem;
-                        z-index: 2;
-                        visibility: visible;
-                        text-shadow: none;
-                        font-weight: 600;
-                        background-color: #ffffff;
-                        box-shadow: 0.2rem 0.2rem 0rem black;
-                        border-radius:1rem;
-                        border: 2px solid black;
-                    }
-                };
-            }
-        }
-    }
-}
-
-
-
-/*PAGINA CONTACTO*/
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact_form{  
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin:0;  
-    padding: 1rem 2rem;
-    background-color: #8430ab;
-    width: 100%;
-    .formlario{
-        width: 18rem;
-    }
-    input{
-        background-color: #fbfbfb; 
-        width: 100%; 
-        height: 40px; 
-        border-radius: 5px;  
-        border-style: solid; 
-        border-width: 1px; 
-        border-color: #b13a1a; 
-        margin-top: 10px;  
-        margin-bottom: 20px;
-        &:focus{
-            outline:0;
-            border: 1px solid #ea00ff;
-        }
-    }
-    textarea{
-        background-color: #fbfbfb; 
-        width: 100%; 
-        height: 150px; 
-        border-radius: 5px;  
-        border-style: solid; 
-        border-width: 1px; 
-        border-color: #b13a1a; 
-        margin-top: 10px;  
-        margin-bottom: 20px; 
-        padding-top: 15px;
-        &:focus{
-            outline:0;
-            border: 1px solid #ffd900;
-        }
-    }
-    label{
-        display: block; 
-        float: center;  
-    }
-    button{
-        height: 45px; 
-        padding-left: 5px;
-        padding-right: 5px;   
-        margin-bottom: 20px; 
-        margin-top: 10px;   
-        text-transform: uppercase;
-        background-color: #ffffff; 
-        border-color: #ffffff; 
-        border-style: solid; 
-        border-radius: 10px;  
-        width: 100%;   
-        cursor: pointer;
-        p{
-            color: #000000; 
-        }
-    }
-    span{
-        color: #ffffff; 
-    }
-    h1{ 
-        text-align: center; 
-        padding-bottom: 1.2rem; 
-        color: #ffffff;
-        font-weight: 400;
-        font-family: 'Dela Gothic One', sans-serif;
-        text-shadow: 0.3rem 0.3rem 0px #00000080;
-        font-size: 2rem;
-    }
-    h3{
-        font-size: 16px; 
-        padding-bottom: 30px;
-        color: #ffffff;   
-    }
-    p{
-        width: 100%;
-        font-size: 14px; 
-        color: #ffffff; 
-    }
-    .aviso{
-        font-size: 13px;  
-        color: #ffffff;  
-    }
-    .formulario form{
-        width: 100%;
-    }
-} 
-.contact_form 
-::-webkit-input-placeholder {
-color: #a8a8a8;
-}
-::-webkit-textarea-placeholder {
-color: #a8a8a8;
-}
-
-/*PAGINA DE ROPA*/
-.paginaRopa{
-    background-color: $RopaColor;
-    margin: 0;
-    padding: 2rem;
-}
-.marca{
-    margin: 2rem 0rem 2rem 0rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    background: $FondoCards;
-    border: 2px solid #ffffff80;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: $sombra;
-    font-weight:800 !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: 
-    box-shadow 0.2s;
-    .titulos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        img{
-            width: 60px;
-            height: 60px;
-            margin: 1rem;
-        }
-    }
-    &:hover{
-        box-shadow:$SombraH;   
-    }
-}
+        box-shadow: $SombraH;}}
+/*PAGINAS*/
+@import 'layouts/autos' ;
+@import 'layouts/musica';
+@import 'layouts/inicio';
+@import 'layouts/contacto';
+@import 'layouts/ropa';

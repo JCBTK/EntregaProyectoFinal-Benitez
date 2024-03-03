@@ -1,0 +1,38 @@
+.paginaAutos{
+    background-color: $AutosColor;
+    padding: 1rem;
+    #textoAutos{
+        h1{color: $AutosColor;
+            text-shadow: 0.1rem 0.1rem 0 black;}
+        .textoAutos{
+                margin-bottom:2rem ;
+                overflow: hidden;
+                background-color: $FondoCards;
+                color: $Textos;
+                border: solid 2px $FondoCards ;
+                border-radius: 1rem;
+                box-shadow: $sombra;
+                padding: 2rem;
+                transition: 0.2s;
+                box-shadow: $sombra;
+                &:hover{
+                    box-shadow: $SombraH;}}
+            h1{
+                padding-top: 2rem ;
+                color:$AutosColor !important;
+                text-shadow: 0.2rem 0.2rem 0 black;
+                font-family: "Koulen", sans-serif;
+                font-size: 3rem !important;
+                &:hover{
+                    transition: text-shadow 0.2s;
+                    text-shadow: 0.1rem 0.1rem 0 black;}}
+            .imagenAuto{
+                width: 70%;
+                border: 2px solid $FondoCards;
+                border-radius: 1rem;
+                margin-bottom: 3rem;
+                box-shadow: $sombra;
+                transition: box-shadow .2s;
+                &:hover{
+                    box-shadow: $SombraH;}}
+        }}

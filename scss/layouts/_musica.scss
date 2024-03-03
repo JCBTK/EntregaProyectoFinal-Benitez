@@ -1,0 +1,75 @@
+.paginaMusica{
+    background-color: $MusicaColor;
+    display: flex;
+    justify-content: center;
+    .musica{
+        display: flex;
+        justify-content:space-around;
+        margin: 2rem;
+        padding: 0;
+        .msc1{background-image: url(../pages/img/Musica1.jpg);}
+        .msc2{background-image: url(../pages/img/Musica2.jpg);}
+        .msc3{background-image: url(../pages/img/Musica3.jpg);}
+        .musicos{
+            display: flex;
+            flex-direction: row;
+            margin: 2rem;
+            justify-content: space-around;
+            .col-sm-12{
+                margin-bottom: 2rem;}
+            .musico{
+                background-size: cover, 100%;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end !important;
+                overflow: hidden;
+                box-sizing: border-box;
+                border-radius: 1rem;
+                height: 60vh;
+                box-shadow: $sombra ;
+                border: solid 2px black;
+                transition:box-shadow 0.2s;
+                text-align: center;
+                text-shadow: 0.1rem 0.1rem 0 black;
+                color: white;
+                h2{font-weight: 800;}
+                a{  
+                    visibility: hidden;
+                    font-size: 1rem;
+                    transition:transform .4s;
+                    border: 1px solid grey ;
+                    border-radius: 1rem;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    font-family:sans-serif;
+                    transition: box-shadow 0.2s;
+                    &:hover{box-shadow: $sombra !important;}}
+                &:hover{
+                    border: 2px solid rgb(0, 0, 0);
+                    box-sizing: border-box;
+                    box-shadow: $SombraH;
+                    text-shadow: none;
+                    h2{ scale: 0.1 0;
+                        transition: color 1s, scale .4s;
+                        color: transparent;}
+                    p{  
+                        scale: 0.1 0;
+                        transition: color 1s, scale .4s;
+                        color: transparent;}
+                    a{margin-bottom: 2rem;
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 1rem;
+                        z-index: 2;
+                        visibility: visible;
+                        text-shadow: none;
+                        font-weight: 600;
+                        background-color: #ffffff;
+                        box-shadow: 0.2rem 0.2rem 0rem black;
+                        border-radius:1rem;
+                        border: 2px solid black;}};
+            }
+        }
+    }}
