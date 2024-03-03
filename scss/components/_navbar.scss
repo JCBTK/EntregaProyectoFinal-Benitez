@@ -1,3 +1,9 @@
+$contactoBloque:#ea00ff;
+$ContactoColor:#7a189b;
+$FondoCards: white;
+$Textos:black;
+$sombra: 0.5rem 0.5rem 0rem black;
+$SombraH: 1rem 1rem 0rem black;
 #logo{
     filter: drop-shadow(-0.2rem 0.2rem 0 black);
     height: 4rem !important;
@@ -7,11 +13,11 @@
 .navbar-toggler-icon{
     filter: invert(black);}
 .navbar-toggler{
-    background-color: #8430ab !important;
-    border: solid 2px #a73bda;
+    background-color: $ContactoColor !important;
+    border: solid 2px $contactoBloque;
     transition: 0.2s;
     &:hover{
-        background-color: #9158ab !important;
+        background-color: $contactoBloque !important;
         box-shadow: $sombra;}}
 #menu a,.navbar-nav a {
     font-size: 1.2rem;
@@ -29,4 +35,4 @@
 .Autos:hover{
     color: $AutosColor !important;}
 .Contacto:hover{
-    color: rgb(196, 78, 246) !important ;}
+    color: $contactoBloque !important ;}
